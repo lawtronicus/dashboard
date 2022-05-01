@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  'nav header header header'
+  'nav main main aside'
+  'nav main main aside'
+  'nav main main aside';
+  background-color: #EEE;
+  font-family: arial;
+}
+
+nav {
+  height: 100%;
+  width: 15rem;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  background-color: #00A8CD;
+  min-height: 100%;
+  color: white;
+}
+
+header {
+  grid-area: header;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 3px #999;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.top_right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 8rem;
+}
+
+.bell {
+  width: 5%
+}
+
+.id {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search input {
+  border-radius: 2rem;
+  width: 75%;
+  border-style: none;
+  background-color: #DDD;
+  height: 2rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greeting {
+  display: flex;
+  padding-left: 5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.catIcon {
+  width: 75%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options .circle {
+  background-color: #FF4ECD;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profile .circle {
+  background-color: #FF4ECD;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.options_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 4rem;
+  padding-right: 12rem;
+}
+
+.roundedRectangle {
+  background-color: #00A8CD;
+  font-family: arial;
+  font-weight: 600;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-color: #EEE;
+  margin-top: 2rem;
+  margin-right: 10rem;
+  margin-left: 2rem;
+}
+
+.project_section {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project_summaries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+
+.project_summaries div {
+  border-radius: 1.5rem;
+  width: 20rem;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: -.5rem 0px 0px #FF4ECD, 0rem .25rem .5rem #666;
+}
+
+.project_title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.title {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #EEE;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+.announcement_group {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: .75rem;
+  box-shadow: .25rem .25rem .25rem #666;
+}
+
+.announcement_title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.logo h1 {
+  align-self: flex-end;;
+}
+
+.catdash_logo {
+  width: 25%;
+  height: auto;
+}
+
+.links {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tools {
+  padding-left: 2rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tools div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.puppy_profile {
+  width: 5%;
+  height: auto;
+}
+
+.underline {
+  border: 2px solid #CCC;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trending {
+  margin-top: 1rem;
+}
+
+.trending_group {
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: .25rem .25rem .25rem #666;
+}
+
+.trending_group div {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.blue_circle {
+  background-color: #C3F1FF;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink_circle {
+  background-color: #FF9797;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green_circle {
+  background-color: #ACFFAA;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple_circle {
+  background-color: #F79BFF;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puppy_profile {
+  width: 90%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(44px);
+    -ms-transform: translateX(26px);
+    transform: translateX(44px);
+  }
+  
+  /* Rounded sliders */
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
